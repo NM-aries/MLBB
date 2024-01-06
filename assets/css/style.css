@@ -1,0 +1,63 @@
+:root{
+    --primary: #43265e;
+    --secondary:#682868;
+    --tertiary:#d9d7b9;
+    --white:#ffff;
+}
+
+@font-face {
+    font-family:KnightWarrior ;
+    src: url(/assets/fonts/KnightWarrior-w16n8.otf);
+}
+@font-face {
+    font-family:thunder ;
+    src: url(/assets/fonts/Thunder-BlackHC.otf);
+}
+
+.navbar{
+
+    z-index: 99999999;
+    font-weight: 600;
+}
+.navbar .nav-item a{
+    transition: 0.3s ease-in-out;
+    color: var(--white) !important;
+}
+.navbar .nav-item a:hover{
+    transition: 0.3s ease-in-out;
+    border-bottom:2px solid var(--white) ;
+}
+.navbar .active{
+    border-bottom:2px solid var(--white) ;
+}
+.navbar-brand
+{
+    font-family: "KnightWarrior",sans-serif;
+    font-size: 2.3rem;
+        color: transparent;
+        -webkit-text-stroke-width: .51px;
+       -webkit-text-stroke-color: var(--white);
+}
+.hero{
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: url(/assets/video/d69a973064cc64cbe81ef1bdac431690.mp4);
+}
+.heroBlur{
+    height: 100vh;
+    position: absolute;
+    backdrop-filter: blur(5px);
+    width: 100%;
+    z-index: 1;
+}
+.hero img{
+    width:90%;
+    right: -400px;
+    position: absolute !important;
+    bottom: 0;
+    top: 0px;
+}
+eroName{
+    margin: 0 auto;
+}
